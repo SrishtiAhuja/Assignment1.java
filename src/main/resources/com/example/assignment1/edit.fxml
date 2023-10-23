@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.EditController">
+   <children>
+      <Label layoutX="204.0" layoutY="40.0" text="Add/ Edit/ Delete" textFill="#1a12bf">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="131.0" text="Name" />
+      <Label layoutX="211.0" layoutY="171.0" text="Status" />
+      <Label layoutX="211.0" layoutY="214.0" text="Delete" />
+      <TextField fx:id="nameField" layoutX="289.0" layoutY="127.0" />
+      <TextField fx:id="statusField" layoutX="289.0" layoutY="167.0" />
+      <TextField fx:id="descriptionField" layoutX="293.0" layoutY="210.0" />
+      <Button fx:id="addButton" layoutX="91.0" layoutY="294.0" mnemonicParsing="false" onAction="#addTask" text="Add" />
+      <Button fx:id="deleteButton" layoutX="274.0" layoutY="294.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete" />
+      <Button fx:id="editButton" layoutX="463.0" layoutY="294.0" mnemonicParsing="false" onAction="#editTask" text="Edit" />
+      <Button layoutX="236.0" layoutY="350.0" mnemonicParsing="false" onAction="#goBack" text="Go Back to the tasks" />
+   </children>
+</AnchorPane>
